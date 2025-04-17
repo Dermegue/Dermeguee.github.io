@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuCGames</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>LuCGames</h1>
+    <p>Tu portal de juegos, programas y emuladores optimizados</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('inicio')">Inicio</a>
+    <a href="#" onclick="showSection('juegos')">Juegos</a>
+    <a href="#" onclick="showSection('programas')">Programas</a>
+    <a href="#" onclick="showSection('emuladores')">Emuladores</a>
+    <a href="#" onclick="showSection('extras')">Extras</a>
+  </nav>
+
+  <section id="inicio" class="section visible">
+    <h2>Bienvenido a LuCGames</h2>
+    <p>Esta plataforma está diseñada para ofrecerte los mejores juegos, programas y emuladores optimizados, con descargas rápidas, información detallada y recomendaciones únicas.</p>
+    <p>Explora nuestras categorías y encuentra lo que más te gusta.</p>
+  </section>
+
+  <section id="juegos" class="section hidden">
+    <h2>Juegos Famosos</h2>
+    <div class="game-list">
+      <div class="game-card" onclick="openModal('DragonBall Sparking Zero', this)"><div class="title">DragonBall Sparking Zero</div></div>
+      <div class="game-card" onclick="openModal('Mortal Kombat 9', this)"><div class="title">Mortal Kombat 9</div></div>
+      <div class="game-card" onclick="openModal('DragonBall Xenoverse 2', this)"><div class="title">DragonBall Xenoverse 2</div></div>
+      <div class="game-card" onclick="openModal('DragonBall Xenoverse 1', this)"><div class="title">DragonBall Xenoverse 1</div></div>
+      <div class="game-card" onclick="openModal('The Long Drive', this)"><div class="title">The Long Drive</div></div>
+      <div class="game-card" onclick="openModal('Red Dead Redemption 1', this)"><div class="title">Red Dead Redemption 1</div></div>
+      <div class="game-card" onclick="openModal('Resident Evil 6', this)"><div class="title">Resident Evil 6</div></div>
+      <div class="game-card" onclick="openModal('Tomb Raider 2013', this)"><div class="title">Tomb Raider 2013</div></div>
+      <div class="game-card" onclick="openModal('South Park - The Stick of Truth', this)"><div class="title">South Park - The Stick of Truth</div></div>
+      <div class="game-card" onclick="openModal('Call Of Duty: Black Ops 2', this)"><div class="title">Call Of Duty: Black Ops 2</div></div>
+    </div>
+  </section>
+
+  <section id="programas" class="section hidden">
+    <h2>Programas Recomendados</h2>
+    <div class="game-list">
+      <div class="game-card" onclick="openModal('Optimizar Pc', this)"><div class="title">Optimizar Pc</div></div>
+      <div class="game-card" onclick="openModal('Photoshop 2022', this)"><div class="title">Photoshop 2022</div></div>
+    </div>
+  </section>
+
+  <section id="emuladores" class="section hidden">
+    <h2>Emuladores Populares</h2>
+    <div class="game-list">
+      <div class="game-card"><div class="title">PCSX2 (PS2)</div></div>
+      <div class="game-card"><div class="title">Dolphin (Wii/GC)</div></div>
+      <div class="game-card"><div class="title">Citra (3DS)</div></div>
+      <div class="game-card"><div class="title">Yuzu (Switch)</div></div>
+    </div>
+  </section>
+
+  <section id="extras" class="section hidden">
+    <h2>Extras</h2>
+    <p>Este video es muy importante, por favor míralo completo:</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="download-btn" target="_blank">IMPORTANTE VER</a>
+  </section>
+
+  <div class="modal" id="gameModal">
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <footer>
+    <p>LuCGames © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
